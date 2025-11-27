@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(202, 202, 202);
+}
+
+header{
+    background-color: rgb(81, 81, 81);
+}
+
+header > h1{
+    color: white;
+    text-align: center;
+    padding:10px;
+    text-shadow: 2px 3px 6px black;
+}
+
+#menu{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header > nav{
+    background-color: rgb(36, 36, 36);
+}
+
+header > nav > ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+header > nav > ul > li > a{
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header > nav > ul > li{
+    padding: 20px;
+    border-top: 1px solid rgb(53, 53, 53);
+    cursor: pointer;
+    background-color: rgb(14, 14, 14);
+    margin:auto;
+    display:block;
+}
+
+header > nav > ul > li:hover{
+    background-color: rgb(47, 47, 47);
+}
+
+main > h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+main > p{
+    text-indent: 20px;
+    text-align: justify;
+}
+
+header > nav {
+    display: none;
+}
+
+main{
+    background-color: white;
+    width: 85vw;
+    margin: auto;
+    padding: 20px;
+    height: 100vh;
+}
+
+header > nav > ul > li{
+    font-size: 18px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+@media (min-width: 700px){
+
+    main{
+        max-width: 800px;
+        background-color: white;
+        margin: auto;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.399);
+        height: 100vh;
+        
+    }
+
+    main > h2{
+        font-size: 24px;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    header > nav{
+        display: block;
+    }
+
+    header > nav > ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header > nav > ul > li{
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 15px;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+    header > nav > ul > li:hover{
+        background-color: rgb(47, 47, 47);
+    }
+}
+
